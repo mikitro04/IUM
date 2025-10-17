@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Benvenuto!"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/cobalt"
+    />
+
+    <TextView
+        android:id="@+id/tvPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Punti esperienza: 0"
+        android:textAlignment="center"
+        android:textColor="@color/cobalt"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cobalt"
+            android:text="+"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concentrati per 5 min!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:textColor="@color/black"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cobalt"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:id="@+id/btnMinus"
+            android:text="-"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textseekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quanto sei soddisfatto oggi da -5 a 5?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:textColor="@color/cobalt"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+    />
+
+    <TextView
+        android:id="@+id/tvVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        android:textColor="@color/cobalt"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+    />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:max="10"
+        android:progress="5"
+        android:layout_marginTop="50dp"
+    />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Logout"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/red"
+    />
+
+</LinearLayout>
