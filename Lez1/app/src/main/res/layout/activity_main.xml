@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/messageAccedi"
         android:layout_width="129dp"
-        android:layout_height="16dp"
+        android:layout_height="wrap_content"
         android:text="Clicca per accedere!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
